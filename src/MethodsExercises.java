@@ -19,7 +19,9 @@ public class MethodsExercises {
         int userInput = getInteger(1, 100);
         System.out.println("Your input: " + userInput);
 
-        calculateFactorial();
+//        calculateFactorial();
+
+        diceRoll();
 
         
 
@@ -72,14 +74,15 @@ public class MethodsExercises {
     }
 
     public static void diceRoll(){
-//        System.out.print("Please enter the number of side for a pair of dice: ");
-//        Scanner scanner = new Scanner(System.in);
-//        int numberOfDice = scanner.nextInt();
-//        Random randomNumber = new Random();
-//        for(int i=0; i< numberOfDice; i++){
-//            System.out.print(randomNumber.nextInt(6)+ 1);
-//            System.out.print(" ");
-//        }
+        System.out.print("Please enter the number of dice you want to roll: ");
+        Scanner scanner = new Scanner(System.in);
+        int numberOfDice = scanner.nextInt();
+        Random randomNumber = new Random();
+        for(int i=0; i< numberOfDice; i++){
+            System.out.print(randomNumber.nextInt(6)+ 1);
+            System.out.print(" ");
+        }
+
     }
 
 
