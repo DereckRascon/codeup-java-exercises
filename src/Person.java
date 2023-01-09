@@ -8,6 +8,7 @@ public class Person {
     public String getName(){
         return this.name;
     }
+//    return name; <-another way to return the name
 
     public void setName(String name){
         this.name = name;
@@ -15,7 +16,9 @@ public class Person {
 
     public void sayHello(){
         System.out.printf("Hello, My name is %s.\n", this.name);
+//        System.out.printf("Hello, from %s.%n", name) <-Instructor way
     }
+
 
     public static void main(String[] args) {
         Person dereck = new Person("Dereck");
