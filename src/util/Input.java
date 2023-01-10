@@ -8,17 +8,21 @@ public class Input {
     public Input(){
         this.scanner = new Scanner(System.in);
     }
+//    scanner = new Scanner(System.in) <-- Instructor way
 
     public String getString(){
+        System.out.println("Please input string: ");
         return this.scanner.nextLine();
     }
+//    return scanner.nextLine(); <-- instructor way
 
     public String getString(String prompt){
         System.out.println(prompt);
-        return getString();
+        return scanner.nextLine();
     }
 
     public boolean yesNo(){
+
         return yesNo("Please enter yes or no");
     }
     public boolean yesNo(String prompt){

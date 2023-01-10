@@ -8,10 +8,16 @@ public class CircleApp {
         Input input = new Input();
         do{
             double rad = input.getDouble(0, 100);
-            Circle quater = new Circle(rad);
-            System.out.println("quater.getCircumference() = " + quater.getCircumference());
-            System.out.println("quater.getArea() = " + quater.getArea());
+            Circle circle = new Circle(rad);
+            System.out.println("circle.getCircumference() = " + circle.getCircumference());
+            System.out.println("circle.getArea() = " + circle.getArea());
         } while (input.yesNo("Do you want to continue?"));
         System.out.printf("You created %d circles.", Circle.circleCount);
     }
+
+
+
+
+
+
 }
