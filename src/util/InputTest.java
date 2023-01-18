@@ -1,5 +1,6 @@
 package util;
 
+
 public class InputTest {
     public static void main(String[] args) {
         Input input = new Input();
@@ -10,4 +11,6 @@ public class InputTest {
         System.out.println(input.getDouble());
         System.out.println(input.yesNo());
     }
+
+
 }
